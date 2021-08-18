@@ -1,0 +1,6 @@
+SELECT co_uf, count(id_matricula) AS contagem
+FROM senso.matricula
+WHERE in_cegueira = 1 AND
+tp_sexo = 2
+GROUP BY co_uf
+ORDER BY contagem DESC

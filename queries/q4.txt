@@ -1,0 +1,5 @@
+SELECT in_autismo, count(id_matricula) AS contagem
+FROM senso.matricula
+WHERE co_uf = 32 AND
+tp_sexo = 1
+GROUP BY in_autismo

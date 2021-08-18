@@ -1,0 +1,4 @@
+SELECT co_uf, count(id_matricula) AS contagem
+FROM senso.matricula
+GROUP BY co_uf
+ORDER BY contagem
