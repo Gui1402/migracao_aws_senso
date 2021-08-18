@@ -18,3 +18,5 @@ variable "glue_role" {
 variable "regiao" {
   default = "us-east-2"
 }
+
+
