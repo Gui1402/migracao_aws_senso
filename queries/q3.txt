@@ -1,0 +1,4 @@
+SELECT tp_zona_residencial, count(id_matricula) AS contagem
+FROM senso.matricula
+WHERE co_uf = 35
+GROUP BY tp_zona_residencial
