@@ -43,6 +43,6 @@ jobs:
         COMMAND_IAC: terraform
       run: |
         cd iac
-        $COMMAND_IAC init
+        $COMMAND_IAC init -migrate-state 
         $COMMAND_IAC validate
         $COMMAND_IAC plan

@@ -31,7 +31,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-        
+
     - name: Download files
       run: |
         cd scripts
@@ -43,7 +43,7 @@ jobs:
         COMMAND_IAC: terraform
       run: |
         cd iac
-        $COMMAND_IAC init
+        $COMMAND_IAC init 
         $COMMAND_IAC validate
         $COMMAND_IAC plan
         $COMMAND_IAC apply -auto-approve
